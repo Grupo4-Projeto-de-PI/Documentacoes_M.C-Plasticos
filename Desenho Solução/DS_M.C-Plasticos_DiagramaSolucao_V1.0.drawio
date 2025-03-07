@@ -1,0 +1,77 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36" version="26.1.0">
+  <diagram name="Página-1" id="HzusvmtyHll84OuPPjKR">
+    <mxGraphModel dx="1459" dy="571" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="qninwZmvaERFJaQQrCV7-1" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-63" y="47" width="587" height="351" as="geometry" />
+        </mxCell>
+        <mxCell id="qninwZmvaERFJaQQrCV7-13" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-40" y="82" width="533" height="279" as="geometry" />
+        </mxCell>
+        <mxCell id="qninwZmvaERFJaQQrCV7-2" value="AWS NUVEM&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-39" y="22" width="111" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="qninwZmvaERFJaQQrCV7-19" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;entryX=0.997;entryY=0.618;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.011;exitY=0.609;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="qninwZmvaERFJaQQrCV7-3" target="qninwZmvaERFJaQQrCV7-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qninwZmvaERFJaQQrCV7-3" value="API REST" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="232" y="120.5" width="221" height="206" as="geometry" />
+        </mxCell>
+        <mxCell id="qninwZmvaERFJaQQrCV7-4" value="Container Docker&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="287.5" y="102" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="qninwZmvaERFJaQQrCV7-5" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-11" y="120.5" width="221" height="206" as="geometry" />
+        </mxCell>
+        <mxCell id="qninwZmvaERFJaQQrCV7-6" value="Container Docker&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="39" y="102" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="qninwZmvaERFJaQQrCV7-7" value="usuário" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="-242" y="187" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qninwZmvaERFJaQQrCV7-11" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="qninwZmvaERFJaQQrCV7-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="211" y="224" as="sourcePoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qninwZmvaERFJaQQrCV7-20" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;exitX=0.01;exitY=0.718;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="qninwZmvaERFJaQQrCV7-5" target="qninwZmvaERFJaQQrCV7-8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-51" y="298" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qninwZmvaERFJaQQrCV7-8" value="" style="image;html=1;image=img/lib/clip_art/computers/Netbook_128x128.png" vertex="1" parent="1">
+          <mxGeometry x="-202" y="192.5" width="50" height="63" as="geometry" />
+        </mxCell>
+        <mxCell id="qninwZmvaERFJaQQrCV7-12" value="&lt;div&gt;conexão ssh&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-126" y="187" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="qninwZmvaERFJaQQrCV7-14" value="instância" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-15" y="55" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="qninwZmvaERFJaQQrCV7-15" value="Node.Js" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="3" y="252" width="87" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qninwZmvaERFJaQQrCV7-16" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;entryX=0.006;entryY=0.555;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="qninwZmvaERFJaQQrCV7-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-142" y="234" as="sourcePoint" />
+            <mxPoint x="-1" y="234" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-31" y="190" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qninwZmvaERFJaQQrCV7-17" value="Scripts Python" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="3" y="139" width="87" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qninwZmvaERFJaQQrCV7-18" value="Banco de dados" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="108" y="139" width="87" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
