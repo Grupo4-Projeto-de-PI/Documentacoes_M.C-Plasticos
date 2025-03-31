@@ -1,0 +1,38 @@
+-------------------------------------------------------------------------------------------------
+Registro através de código funcionário e senha (Pois são funcionários analfabetos)
+O Ivo quer total controle sobre quem pode adicionar, quem pode remover e delimitar acessos dentro do sistema
+-------------------------------------------------------------------------------------------------
+Clientes finais de venda são pessoas físicas
+Entrada também tem clientes PJ e pessoas físicas (tipos diferentes de compradores)
+Registro de nome e telefone da pessoa no qual ele vendeu
+-------------------------------------------------------------------
+Material separado: Pessoas Comuns e nem sempre são PJ 
+Fornecedores: Nome e Telefone e sempre são pessoas físicas (convenci a fazer um registro histórico de seus fornecedores)
+Fornecedores a granel não são interessantes fazer o registro deles pois são muito voláteis
+--------------------------------------------------------------------
+Fazer uma parte de e tutorial para fazer o sistema
+Sistema tem que acessar em casa e no ferro velho
+--------------------------------------------------------------------
+(controle financeiro)
+Despesas dentro do ferro velho (funcionário, almoço dos funcionário, gasolina do caminhão, planilha de gastos)
+
+planilha azul - preta - vermelha = lucro no mês
+---------------------------------------------------------------------
+Poucas pessoas vendem material separado
+
+
+REFINADO
+
+O Sistema de usuário vai funcionar com um código de funcionário e senha que o Ivo poderá criar quando adicionar alguém, terá que ter uma hierarquia de acessos onde o Ivo escolhe quais sessões cada conta poderá acessar
+
+Clientes finais são pessoas físicas (Criar o tipo de pessoa que ele vendeu mesmo sendo raro ter CNPJ envolvido na compra final), fazer o registro de nome e telefone
+Fornecedores: São fornecedores PJ e Pessoa Física (Criar o tipo de fornecedor se ele é CNPJ ou CPF), fazer o registro de nome e telefone
+
+Material Separado: São pessoas físicas que vendem o material separado, raramente PJ e existem poucas compras do material separado
+Granel: Não é interessante fazer o registro dessas pessoas que ele compra do portão pois são muito voláteis, toda hora muda os seus vendedores
+
+Fornecer um guia de ajuda o Ivo e continuar com o tutorial de primeiro acesso explicando o que fazer dentro do sistema
+
+Sistema terá que ser em nuvem pois o Ivo gostaria de poder acessar fora do ferro velho
+
+Adicionr módulo de controle financeiro com as despesas dentro do ferro velho que irá descontar no lucro final do mês fazendo a subtração da planilha preta - verde (rara excessões de uso mas incluir do mesmo jeito) - azul - vermelha
