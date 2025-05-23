@@ -1,0 +1,7 @@
+Reunião com o Ivo Santos:
+- Controle do Preço: 
+entrada: primeira quinzena, ferro 0,70 compra pelo ivo 1,00 para vender, aparece os valores gastos e os vendidos;
+- Compra mais barato do que vende;
+- Dependendo do produto o preço muda, ele precisa que o sistema consiga colocar o preço do produto quando for vender;
+- Pessoas com baixa escolaridade: Não iram usar;
+- Ivo Santos e a Filha usaram o sistema, talvez o sobrinho quando o Ivo não estiver;
