@@ -1,0 +1,675 @@
+type: collection.insomnia.rest/5.0
+name: Massa de dados M.C Plasticos
+meta:
+  id: wrk_ad8f9c7acd0c46679f37b745cf4db4a3
+  created: 1747582576450
+  modified: 1747582576450
+collection:
+  - name: Massa de dados M.C Plasticos (Usuário)
+    meta:
+      id: fld_5f2f9202b298459cabb92de245a402b3
+      created: 1745447946359
+      modified: 1748292817763
+      sortKey: -1745447944828
+      description: Massa de dados para testar o usuario controller
+    children:
+      - url: http://localhost:8080/usuario
+        name: Criar Usuário
+        meta:
+          id: req_52dead8ee4ea46ccb6237da17fb0f4be
+          created: 1745447946361
+          modified: 1748441400136
+          isPrivate: false
+          sortKey: -1745447944827
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+                "nome": "Quiteria",
+                "senha": "123",
+                "tipoUsuario": 2
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/usuario
+        name: Listando todos os Usuários
+        meta:
+          id: req_ea83a1c94a104426b23b12829635b290
+          created: 1745447946363
+          modified: 1748391459534
+          isPrivate: false
+          sortKey: -1745447944826
+        method: GET
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/usuario/3
+        name: Listando id Usuário
+        meta:
+          id: req_62a51f3cfa4942f682983cf078455608
+          created: 1745447946365
+          modified: 1748392079738
+          isPrivate: false
+          sortKey: -1745447944825
+        method: GET
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/usuario/nome?codigoFuncionario=1
+        name: Atualizando nome Usuário
+        meta:
+          id: req_cb3bc0b15cf543febea53daaa1728e46
+          created: 1745447946367
+          modified: 1748392136465
+          isPrivate: false
+          sortKey: -1745447944824
+        method: PATCH
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"nome": "MULAMBO" 
+            }
+        parameters:
+          - name: codigoFuncionario
+            value: "1"
+            disabled: false
+            id: pair_94a9139e0e834baf9ec7b23e75d72845
+        headers:
+          - name: Content-Type
+            value: application/json
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/usuario/senha?codigoFuncionario=1
+        name: Atualizando senha Usuário
+        meta:
+          id: req_14a1853e531e425f8c8bd83a6fa18bb9
+          created: 1745447946369
+          modified: 1748392166075
+          isPrivate: false
+          sortKey: -1745447944823
+        method: PATCH
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"senha": "quitier"
+            }
+        parameters:
+          - name: codigoFuncionario
+            value: "1"
+            disabled: false
+            id: pair_d39c1c54b6a9433a94e31849dfb91686
+        headers:
+          - name: Content-Type
+            value: application/json
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/usuario/1
+        name: Deletar um usuário (Talvez não para deixar registro)
+        meta:
+          id: req_584b8a7790e246b7ae4ca00c9575e599
+          created: 1748392274268
+          modified: 1748392324479
+          isPrivate: false
+          sortKey: -1745447944822.5
+        method: DELETE
+        body:
+          mimeType: application/json
+        parameters:
+          - name: codigoFuncionario
+            value: "1"
+            disabled: false
+            id: pair_d39c1c54b6a9433a94e31849dfb91686
+        headers:
+          - name: Content-Type
+            value: application/json
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: "Massa de dados M.C Plasticos (Produto) "
+    meta:
+      id: fld_41623d3b72154dc0b1343e6c53b4acb5
+      created: 1745448013103
+      modified: 1748440945493
+      sortKey: -1745448010053
+    children:
+      - url: http://localhost:8080/produto
+        name: Listando todos os produtos
+        meta:
+          id: req_baa9429ea02343e1af7508f9ae475e05
+          created: 1745448013112
+          modified: 1748393905674
+          isPrivate: false
+          sortKey: -1745448010052
+        method: GET
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/produto/id?id=4
+        name: Listando Produto por Id
+        meta:
+          id: req_56ae419dea6242b9893b558685ee6adf
+          created: 1745448013114
+          modified: 1748440823557
+          isPrivate: false
+          sortKey: -1745448010051
+        method: GET
+        parameters:
+          - name: id
+            value: "3"
+            disabled: false
+            id: pair_ced3e7b261134306b475b96f2a11d277
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/produto/tipo/1
+        name: Listando Produto pelo tipo
+        meta:
+          id: req_af04b3e755b34e0e95095e282d893c46
+          created: 1745448013115
+          modified: 1748398237228
+          isPrivate: false
+          sortKey: -1745448010050
+        method: GET
+        parameters:
+          - name: tipo
+            value: Cobre
+            disabled: false
+            id: pair_566db332c77a4fb29f17d5176cdd7c82
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/produto
+        name: Criando produto
+        meta:
+          id: req_0b1f146aa9a24ba29f15a6c472426835
+          created: 1745448013117
+          modified: 1748438751895
+          isPrivate: false
+          sortKey: -1745448010049
+        method: POST
+        body:
+          mimeType: application/json
+          text: |2-
+            
+                {
+                    "nome": "Fios de Cobre",
+                    "tipo": 2,
+                    "fkUsuario": 1
+                }
+        headers:
+          - name: Content-Type
+            value: application/json
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/produto/6
+        name: Deletando Produto
+        meta:
+          id: req_813c9d6a991a4147a95eb626218d2a7f
+          created: 1745448013118
+          modified: 1748439298190
+          isPrivate: false
+          sortKey: -1745448010048
+        method: DELETE
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/produto/atualizar-produto/4
+        name: Atualizar todo produto
+        meta:
+          id: req_22f2d89080ab4e8bb67488e4b4cd5732
+          created: 1745448013120
+          modified: 1748440790790
+          isPrivate: false
+          sortKey: -1745448010047
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+                "nome": "Bacia",
+                "tipo": 1
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Login e Logoff
+    meta:
+      id: fld_8ae910e18689408c97e1e170c9c74347
+      created: 1745454357923
+      modified: 1745454357923
+      sortKey: -1745454357924
+    children:
+      - url: http://localhost:8080/usuario/login
+        name: Login Usuario
+        meta:
+          id: req_afa956d087374cc193ac4111e9cfa81d
+          created: 1745454363828
+          modified: 1745528250375
+          isPrivate: false
+          sortKey: -1745454365512
+        method: GET
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"nome": "Fabio",
+            	"senha": "123"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.2
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/usuario/logoff
+        name: Logoff Usuario
+        meta:
+          id: req_35f275e8e16545bfa84194ae55cafddb
+          created: 1745526223037
+          modified: 1745529242583
+          isPrivate: false
+          sortKey: -1745451187782
+        method: GET
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"nome": "Fabio"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.2
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Massa de dados M.C Plasticos (Parceiro Comercial)
+    meta:
+      id: fld_0f9000ab13c842dc980b3ac15f465b5c
+      created: 1745531679419
+      modified: 1748445479453
+      sortKey: -1745454358024
+    children:
+      - url: http://localhost:8080/parceiro-comercial
+        name: Buscando todos os atores comerciais
+        meta:
+          id: req_1e93b28203b64c6bbe47921f68ce3266
+          created: 1745531706683
+          modified: 1748441041207
+          isPrivate: false
+          sortKey: -1745531708180
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.0.2
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/parceiro-comercial
+        name: Criando um novo ator comercial
+        meta:
+          id: req_cce364d9a39a421da4b23443582ca7ec
+          created: 1745532369009
+          modified: 1748441216348
+          isPrivate: false
+          sortKey: -1745493036846
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            		"nome": "João Pedro",
+            		"telefone": "11912345678",
+            		"tipoComercial": 1,
+            		"papelComercial": 2
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.2
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/parceiro-comercial/2
+        name: Deletando ator comercial
+        meta:
+          id: req_f318feb72c744df2b4f9488553f94c89
+          created: 1745534970560
+          modified: 1748441929455
+          isPrivate: false
+          sortKey: -1745473701179
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/11.0.2
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/parceiro-comercial/2
+        name: Atualizar Parceiro Comercial
+        meta:
+          id: req_df7e6087c85c450a994228f525b9fae9
+          created: 1748444477672
+          modified: 1748445324236
+          isPrivate: false
+          sortKey: -1745468867262.25
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "nome": "Parceiro Comercial Exemplo",
+              "telefone": "12345678901",
+              "tipoComercial": 0,
+              "papelComercial": 0
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.2
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Massa de dados M.C Plásticos (Transação)
+    meta:
+      id: fld_438cb38e317b4de58bfe8301cf2d6851
+      created: 1748292780692
+      modified: 1748460141530
+      sortKey: -1748292780692
+    children:
+      - url: http://localhost:8080/transacoes
+        name: Criar nova transação
+        meta:
+          id: req_a258abac8d894b9888f36d1e9c4fd99f
+          created: 1748292793290
+          modified: 1748439680442
+          isPrivate: false
+          sortKey: -1748292793290
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "fkProduto": 2,
+              "categoria": 0,
+              "peso": 100.5,
+              "valorTotal": 1500.75,
+              "tipoOperacao": 1,
+              "fkParceiroComercial": 2,
+              "fkUsuario": 2
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/transacoes
+        name: Buscando todas as transações
+        meta:
+          id: req_c637d7b2d7d24f6e8e9a9c5a0b0024bf
+          created: 1748294236151
+          modified: 1748294259052
+          isPrivate: false
+          sortKey: -1747387031949
+        method: GET
+        body:
+          mimeType: application/json
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/transacoes/1
+        name: Buscando transação por ID
+        meta:
+          id: req_1ff340d9324c4279934b70cec640423a
+          created: 1748294619332
+          modified: 1748294623392
+          isPrivate: false
+          sortKey: -1746934151278.5
+        method: GET
+        body:
+          mimeType: application/json
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/transacoes/filtro
+        name: Buscando transacao por filtro
+        meta:
+          id: req_f02f41a7c23e4a2b99ffb2d1d9d00278
+          created: 1748305217115
+          modified: 1748441866047
+          isPrivate: false
+          sortKey: -1746707710943.25
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "fkProduto": 2,
+              "fkCategoria": 2,
+              "fkParceiroComercial": null,
+              "tipoOperacao": null,
+              "dataInicio": null,
+              "dataFim": null,
+              "pesoMinimo": null,
+              "pesoMaximo": null,
+              "tipoProdutoId": null
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/transacoes/1
+        name: Atualizando informações do historico
+        meta:
+          id: req_80225f81676e43549468e8d714a4c6b4
+          created: 1748308767394
+          modified: 1748439705192
+          isPrivate: false
+          sortKey: -1746594490775.625
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "fkProduto": 3,
+              "peso": 25.5,
+              "preco": 100.0,
+              "tipoOperacao": 0,
+              "categoria": 1,
+              "fkParceiroComercial": 2
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/transacoes/1
+        name: Deletando um historico
+        meta:
+          id: req_8eddeec7b82d453a9a0da1a57c878a00
+          created: 1748309919549
+          modified: 1748309927895
+          isPrivate: false
+          sortKey: -1746537880691.8125
+        method: DELETE
+        body:
+          mimeType: application/json
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_3dc27c9b07114abf955c5aa7d485ee23
+    created: 1745447946375
+    modified: 1745447946375
+environments:
+  name: Base Environment
+  meta:
+    id: env_f0374caa73284808a4b03b0528317b9d
+    created: 1745447946373
+    modified: 1745447946373
+    isPrivate: false
